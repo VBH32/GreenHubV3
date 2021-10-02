@@ -1,5 +1,5 @@
 -- Green_Hub
--- Version: 3.9
+-- Version: 3.9.7
 
 -- Instances:
 
@@ -84,7 +84,7 @@ TextLabel_2.BackgroundTransparency = 1.000
 TextLabel_2.Position = UDim2.new(0.273364484, 0, 0, 0)
 TextLabel_2.Size = UDim2.new(0, 73, 0, 28)
 TextLabel_2.Font = Enum.Font.Code
-TextLabel_2.Text = "By T_tonkW"
+TextLabel_2.Text = "By Vastro"
 TextLabel_2.TextColor3 = Color3.fromRGB(39, 255, 127)
 TextLabel_2.TextSize = 15.000
 TextLabel_2.TextXAlignment = Enum.TextXAlignment.Left
@@ -146,7 +146,7 @@ TextLabel_4.BackgroundTransparency = 1.000
 TextLabel_4.Position = UDim2.new(0.0606433637, 0, 0.0342337564, 0)
 TextLabel_4.Size = UDim2.new(0, 69, 0, 13)
 TextLabel_4.Font = Enum.Font.Code
-TextLabel_4.Text = "Main Angles"
+TextLabel_4.Text = "Angles"
 TextLabel_4.TextColor3 = Color3.fromRGB(39, 255, 127)
 TextLabel_4.TextSize = 13.000
 
@@ -235,7 +235,7 @@ WAX.BackgroundColor3 = Color3.fromRGB(39, 255, 127)
 WAX.Position = UDim2.new(0.0093457941, 0, 0, 0)
 WAX.Size = UDim2.new(0, 35, 0, 24)
 WAX.Font = Enum.Font.Code
-WAX.Text = "X"
+WAX.Text = "Down"
 WAX.TextColor3 = Color3.fromRGB(39, 255, 127)
 WAX.TextSize = 14.000
 
@@ -261,7 +261,7 @@ WAZ.BackgroundColor3 = Color3.fromRGB(39, 255, 127)
 WAZ.Position = UDim2.new(0.660730004, 0, 0, 0)
 WAZ.Size = UDim2.new(0, 35, 0, 24)
 WAZ.Font = Enum.Font.Code
-WAZ.Text = "Z"
+WAZ.Text = "Up"
 WAZ.TextColor3 = Color3.fromRGB(39, 255, 127)
 WAZ.TextSize = 14.000
 
@@ -468,17 +468,17 @@ local function DBGS_fake_script() -- TextBox.LocalScript
 			AP.RigidityEnabled = true
 			AP.ReactionForceEnabled = false
 			AP.ApplyAtCenterOfMass = true
-			AP.MaxForce = 9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+			AP.MaxForce = 50
 			AP.MaxVelocity = math.huge
-			AP.Responsiveness = 200980808004573573475635356364564554666666666666666665464
+			AP.Responsiveness =  100
 			local AO = Instance.new("AlignOrientation", i)
 			AO.Attachment0 = att0
 			AO.Attachment1 = att1
 			AO.ReactionTorqueEnabled = false
 			AO.PrimaryAxisOnly = false
-			AO.MaxTorque = 9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+			AO.MaxTorque = 2
 			AO.MaxAngularVelocity = math.huge
-			AO.Responsiveness = 20098080800654666666666664666666666666666666666666666666
+			AO.Responsiveness = 50
 			table.insert(visstuff,{AO,AP,att0,att1,l})
 			return l
 		end
@@ -571,11 +571,11 @@ local function DBGS_fake_script() -- TextBox.LocalScript
 		end
 		local function VectorFromSettings(angle,str)
 			if str=="X" then
-				return Vector3.new(angle,0,0)
+				return Vector3.new(angle,-2,0)
 			elseif str=="Y" then
 				return Vector3.new(0,angle,0)
 			elseif str=="Z" then
-				return Vector3.new(0,2,angle)
+				return Vector3.new(0,1,angle)
 			end
 		end
 		dont=5
@@ -588,15 +588,16 @@ local function DBGS_fake_script() -- TextBox.LocalScript
 						if CurrentSound then
 							local Volume = CurrentSound['PlaybackLoudness']
 							local Iterator=math.rad(Spin+(K*(760/#Visualizer)))
-							local Z = _G.Distance + Volume / (1 ~= 90 and (200 - 1) or .01)
-							local G =  Volume / (40 ~= 5 and (10000000 - 40) or .01)
+							local Z = _G.Distance + Volume / (1 ~= 90 and (-200 - 1) or .01)
+							local G =  Volume / (5 ~= -42 and (10000 - -1) or .01)
 							local P = CFrame.new(Root['Position']) * AngleFromSettings(Iterator,_G.VisAngle) * CFrame.new(1,0,Z)
 							local AddVector =Vector3.new(0,0,0)
 							if _G.WavesOn == "On" then
-								AddVector=VectorFromSettings(math.sin((((dt*_G.WaveInt)+(K/#Visualizer)*(math.pi*2)))),_G.WavesAngle)
+								AddVector=VectorFromSettings(math.sin((((dt*_G.WaveInt)+(K/#Visualizer)*(math.pi*5000000000)))),_G.WavesAngle)
 							end
+							
 							V['Position'] = P.p+AddVector
-							V['Rotation'] = CF2V(CFrame.new(V.Position, Root['Position'] + Vector3.new(0, G, 0)))
+							V['Rotation'] = CF2V(CFrame.new(V.Position, Root['Position'] + Vector3.new(-1, G, 4.6)))
 						end
 						Spin+=_G.Speed
 						game:service'RunService'.RenderStepped:Wait()
@@ -809,10 +810,10 @@ coroutine.wrap(WYFU_fake_script)()
 local function MDGLVEO_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
-	_G.VisAngle="X"
+	_G.VisAngle="Y"
 	_G.WavesOn="Off"
 	_G.WavesAngle="Y"
-	_G.BoomboxDependantSpeed="Off"
+	_G.BoomboxDependantSpeed="On"
 end
 coroutine.wrap(MDGLVEO_fake_script)()
 local function JZFN_fake_script() -- Frame.Dragify 
@@ -821,7 +822,7 @@ local function JZFN_fake_script() -- Frame.Dragify
 	local UIS = game:GetService("UserInputService")
 	function dragify(Frame)
 	    dragToggle = nil
-	    local dragSpeed = 0.50
+	    local dragSpeed = -0
 	    dragInput = nil
 	    dragStart = nil
 	    local dragPos = nil
@@ -874,7 +875,7 @@ local function CIGR_fake_script() -- TextBox_3.LocalScript
 					v.Parent=game.Players.LocalPlayer.Backpack
 				end
 			end
-			wait(game.Players.RespawnTime-0.3)
+			wait(game.Players.RespawnTime-0.10)
 			local t = {}
 			for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
 				v.Parent=char
