@@ -578,7 +578,7 @@ local function DBGS_fake_script() -- TextBox.LocalScript
 				return Vector3.new(0,1,angle)
 			end
 		end
-		dont=5
+		dont=0
 		setupadded()
 		for K,V in next, Visualizer do
 			coroutine.wrap(function()
@@ -867,7 +867,7 @@ local function CIGR_fake_script() -- TextBox_3.LocalScript
 			game.Players.LocalPlayer.Character=nil
 			game.Players.LocalPlayer.Character=char
 			char.Animate:Destroy()
-			char.HumanoidRootPart.CFrame=CFrame.new(0,9999,0)
+			char.HumanoidRootPart.CFrame=CFrame.new(0,99999,0)
 			wait(.1)
 			char.HumanoidRootPart.Anchored=true
 			for i,v in pairs(char:GetChildren()) do
@@ -875,7 +875,7 @@ local function CIGR_fake_script() -- TextBox_3.LocalScript
 					v.Parent=game.Players.LocalPlayer.Backpack
 				end
 			end
-			wait(game.Players.RespawnTime-0.10)
+			wait(game.Players.RespawnTime -0.10)
 			local t = {}
 			for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
 				v.Parent=char
@@ -891,7 +891,7 @@ local function CIGR_fake_script() -- TextBox_3.LocalScript
 			for i,v in pairs(t) do
 				char.Humanoid:EquipTool(v)
 			end
-			wait(.3)
+			wait(.1)
 		end	
 	end)
 end
