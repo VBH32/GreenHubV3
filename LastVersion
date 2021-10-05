@@ -54,6 +54,10 @@ Aux_Pineapple.Parent = game:WaitForChild("CoreGui")
 Aux_Pineapple.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 Aux_Pineapple.ResetOnSpawn = false
 
+UICorner_3.CornerRadius = UDim.new(2,0)
+UICorner_3.Parent = Aux_Pineapple_V3
+
+
 Frame.Parent = Aux_Pineapple
 Frame.AnchorPoint = Vector2.new(0.5, 0.5)
 Frame.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
@@ -62,10 +66,16 @@ Frame.BorderSizePixel = 5
 Frame.Position = UDim2.new(0.5, 0, 0.564318538, 0)
 Frame.Size = UDim2.new(0, 429, 0, 385)
 
+UICorner_3.CornerRadius = UDim.new(2,0)
+UICorner_3.Parent = Aux_Pineapple
+
 Frame_2.Parent = Frame
 Frame_2.BackgroundColor3 = Color3.fromRGB(0,0,0)
 Frame_2.BorderSizePixel = 0
 Frame_2.Size = UDim2.new(0, 428, 0, 30)
+
+UICorner_3.CornerRadius = UDim.new(2,0)
+UICorner_3.Parent = Frame
 
 TextLabel.Parent = Frame_2
 TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -74,9 +84,12 @@ TextLabel.Position = UDim2.new(0.0350467265, 0, 0, 0)
 TextLabel.Size = UDim2.new(0, 76, 0, 28)
 TextLabel.Font = Enum.Font.Code
 TextLabel.Text = "Green Hub"
-TextLabel.TextColor3 = Color3.fromRGB(39, 255, 127)
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.TextSize = 15.000
 TextLabel.TextXAlignment = Enum.TextXAlignment.Left
+
+UICorner_3.CornerRadius = UDim.new(2,0)
+UICorner_3.Parent = TextLabel
 
 TextLabel_2.Parent = Frame_2
 TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -85,7 +98,7 @@ TextLabel_2.Position = UDim2.new(0.273364484, 0, 0, 0)
 TextLabel_2.Size = UDim2.new(0, 73, 0, 28)
 TextLabel_2.Font = Enum.Font.Code
 TextLabel_2.Text = "By Vastro"
-TextLabel_2.TextColor3 = Color3.fromRGB(39, 255, 127)
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_2.TextSize = 15.000
 TextLabel_2.TextXAlignment = Enum.TextXAlignment.Left
 
@@ -104,7 +117,7 @@ TextBox.Position = UDim2.new(0.345004708, 0, 0.104059465, 0)
 TextBox.Size = UDim2.new(0, 125, 0, 26)
 TextBox.Font = Enum.Font.Code
 TextBox.Text = "Visualize"
-TextBox.TextColor3 = Color3.fromRGB(39, 255, 127)
+TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextBox.TextSize = 14.000
 
 TextBox_2.Name = "TextBox"
@@ -115,7 +128,7 @@ TextBox_2.Position = UDim2.new(0.678338051, 0, 0.104059465, 0)
 TextBox_2.Size = UDim2.new(0, 119, 0, 26)
 TextBox_2.Font = Enum.Font.Code
 TextBox_2.Text = "Mass-Play"
-TextBox_2.TextColor3 = Color3.fromRGB(39, 255, 127)
+TextBox_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextBox_2.TextSize = 14.000
 
 Frame_4.Parent = Frame
@@ -147,7 +160,7 @@ TextLabel_4.Position = UDim2.new(0.0606433637, 0, 0.0342337564, 0)
 TextLabel_4.Size = UDim2.new(0, 69, 0, 13)
 TextLabel_4.Font = Enum.Font.Code
 TextLabel_4.Text = "Angles"
-TextLabel_4.TextColor3 = Color3.fromRGB(39, 255, 127)
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_4.TextSize = 13.000
 
 Frame_6.Parent = Frame_5
@@ -172,12 +185,12 @@ Frame_8.Size = UDim2.new(0, 1, 0, 24)
 
 MAX.Name = "MAX"
 MAX.Parent = Frame_6
-MAX.BackgroundColor3 = Color3.fromRGB(39, 255, 127)
+MAX.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 MAX.Position = UDim2.new(0.0093457941, 0, 0, 0)
 MAX.Size = UDim2.new(0, 35, 0, 24)
 MAX.Font = Enum.Font.Code
 MAX.Text = "X"
-MAX.TextColor3 = Color3.fromRGB(39, 255, 127)
+MAX.TextColor3 = Color3.fromRGB(255, 255, 255)
 MAX.TextSize = 14.000
 
 UICorner.CornerRadius = UDim.new(0, 3)
@@ -185,12 +198,12 @@ UICorner.Parent = MAX
 
 MAY.Name = "MAY"
 MAY.Parent = Frame_6
-MAY.BackgroundColor3 = Color3.fromRGB(39, 255, 127)
+MAY.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 MAY.Position = UDim2.new(0.339622617, 0, 0, 0)
 MAY.Size = UDim2.new(0, 35, 0, 24)
 MAY.Font = Enum.Font.Code
 MAY.Text = "Y"
-MAY.TextColor3 = Color3.fromRGB(39, 255, 127)
+MAY.TextColor3 = Color3.fromRGB(255, 255, 255)
 MAY.TextSize = 14.000
 
 UICorner_2.CornerRadius = UDim.new(0, 3)
@@ -198,12 +211,12 @@ UICorner_2.Parent = MAY
 
 MAZ.Name = "MAZ"
 MAZ.Parent = Frame_6
-MAZ.BackgroundColor3 = Color3.fromRGB(39, 255, 127)
+MAZ.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 MAZ.Position = UDim2.new(0.660730004, 0, 0, 0)
 MAZ.Size = UDim2.new(0, 35, 0, 24)
 MAZ.Font = Enum.Font.Code
 MAZ.Text = "Z"
-MAZ.TextColor3 = Color3.fromRGB(39, 255, 127)
+MAZ.TextColor3 = Color3.fromRGB(255, 255, 255)
 MAZ.TextSize = 14.000
 
 UICorner_3.CornerRadius = UDim.new(0, 3)
@@ -231,12 +244,12 @@ Frame_11.Size = UDim2.new(0, 1, 0, 24)
 
 WAX.Name = "WAX"
 WAX.Parent = Frame_9
-WAX.BackgroundColor3 = Color3.fromRGB(39, 255, 127)
+WAX.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 WAX.Position = UDim2.new(0.0093457941, 0, 0, 0)
 WAX.Size = UDim2.new(0, 35, 0, 24)
 WAX.Font = Enum.Font.Code
 WAX.Text = "Down"
-WAX.TextColor3 = Color3.fromRGB(39, 255, 127)
+WAX.TextColor3 = Color3.fromRGB(255, 255, 255)
 WAX.TextSize = 14.000
 
 UICorner_4.CornerRadius = UDim.new(0, 3)
@@ -244,12 +257,12 @@ UICorner_4.Parent = WAX
 
 WAY.Name = "WAY"
 WAY.Parent = Frame_9
-WAY.BackgroundColor3 = Color3.fromRGB(39, 255, 127)
+WAY.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 WAY.Position = UDim2.new(0.339622617, 0, 0, 0)
 WAY.Size = UDim2.new(0, 35, 0, 24)
 WAY.Font = Enum.Font.Code
 WAY.Text = "Y"
-WAY.TextColor3 = Color3.fromRGB(39, 255, 127)
+WAY.TextColor3 = Color3.fromRGB(255, 255, 255)
 WAY.TextSize = 14.000
 
 UICorner_5.CornerRadius = UDim.new(0, 3)
@@ -257,12 +270,12 @@ UICorner_5.Parent = WAY
 
 WAZ.Name = "WAZ"
 WAZ.Parent = Frame_9
-WAZ.BackgroundColor3 = Color3.fromRGB(39, 255, 127)
+WAZ.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 WAZ.Position = UDim2.new(0.660730004, 0, 0, 0)
 WAZ.Size = UDim2.new(0, 35, 0, 24)
 WAZ.Font = Enum.Font.Code
 WAZ.Text = "Up"
-WAZ.TextColor3 = Color3.fromRGB(39, 255, 127)
+WAZ.TextColor3 = Color3.fromRGB(255, 255, 255)
 WAZ.TextSize = 14.000
 
 UICorner_6.CornerRadius = UDim.new(0, 3)
@@ -275,7 +288,7 @@ WavesOn.Position = UDim2.new(0.814416647, 0, -1.17032111, 0)
 WavesOn.Size = UDim2.new(0, 18, 0, 18)
 WavesOn.Font = Enum.Font.Code
 WavesOn.Text = ""
-WavesOn.TextColor3 = Color3.fromRGB(39, 255, 127)
+WavesOn.TextColor3 = Color3.fromRGB(255, 255, 255)
 WavesOn.TextSize = 14.000
 
 UICorner_7.CornerRadius = UDim.new(0, 3)
@@ -288,7 +301,7 @@ TextLabel_5.Position = UDim2.new(0.729761064, 0, 0.0342337564, 0)
 TextLabel_5.Size = UDim2.new(0, 69, 0, 13)
 TextLabel_5.Font = Enum.Font.Code
 TextLabel_5.Text = "Waves"
-TextLabel_5.TextColor3 = Color3.fromRGB(39, 255, 127)
+TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_5.TextSize = 13.000
 
 TextLabel_6.Parent = Frame_5
@@ -298,7 +311,7 @@ TextLabel_6.Position = UDim2.new(0.685643435, 0, 0.159233764, 0)
 TextLabel_6.Size = UDim2.new(0, 48, 0, 13)
 TextLabel_6.Font = Enum.Font.Code
 TextLabel_6.Text = "Enabled"
-TextLabel_6.TextColor3 = Color3.fromRGB(39, 255, 127)
+TextLabel_6.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_6.TextSize = 13.000
 
 TextLabel_7.Parent = Frame_5
@@ -308,7 +321,7 @@ TextLabel_7.Position = UDim2.new(0.401329696, 0, 0.0342337564, 0)
 TextLabel_7.Size = UDim2.new(0, 69, 0, 13)
 TextLabel_7.Font = Enum.Font.Code
 TextLabel_7.Text = "Misc"
-TextLabel_7.TextColor3 = Color3.fromRGB(39, 255, 127)
+TextLabel_7.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_7.TextSize = 13.000
 
 Distance.Name = "Distance"
@@ -320,7 +333,7 @@ Distance.Size = UDim2.new(0, 119, 0, 29)
 Distance.Font = Enum.Font.Code
 Distance.PlaceholderText = "Distance (5)"
 Distance.Text = ""
-Distance.TextColor3 = Color3.fromRGB(39, 255, 127)
+Distance.TextColor3 = Color3.fromRGB(255, 255, 255)
 Distance.TextSize = 14.000
 
 WaveInt.Name = "WaveInt"
@@ -332,7 +345,7 @@ WaveInt.Size = UDim2.new(0, 119, 0, 29)
 WaveInt.Font = Enum.Font.Code
 WaveInt.PlaceholderText = "Wave Intensity (3)"
 WaveInt.Text = ""
-WaveInt.TextColor3 = Color3.fromRGB(39, 255, 127)
+WaveInt.TextColor3 = Color3.fromRGB(255, 255, 255)
 WaveInt.TextSize = 12.000
 
 Speed.Name = "Speed"
@@ -345,7 +358,7 @@ Speed.Font = Enum.Font.Code
 Speed.PlaceholderColor3 = Color3.fromRGB(178, 178, 178)
 Speed.PlaceholderText = "Speed (1)"
 Speed.Text = ""
-Speed.TextColor3 = Color3.fromRGB(39, 255, 127)
+Speed.TextColor3 = Color3.fromRGB(255, 255, 255)
 Speed.TextSize = 14.000
 
 AudioId.Name = "AudioId"
@@ -357,7 +370,7 @@ AudioId.Size = UDim2.new(0, 119, 0, 26)
 AudioId.Font = Enum.Font.Code
 AudioId.PlaceholderText = "Audio-ID"
 AudioId.Text = ""
-AudioId.TextColor3 = Color3.fromRGB(39, 255, 127)
+AudioId.TextColor3 = Color3.fromRGB(255, 255, 255)
 AudioId.TextSize = 14.000
 
 Amount.Name = "Amount"
@@ -370,7 +383,7 @@ Amount.Font = Enum.Font.Code
 Amount.PlaceholderColor3 = Color3.fromRGB(178, 178, 178)
 Amount.PlaceholderText = "Amount"
 Amount.Text = ""
-Amount.TextColor3 = Color3.fromRGB(39, 255, 127)
+Amount.TextColor3 = Color3.fromRGB(255, 255, 255)
 Amount.TextSize = 14.000
 
 TextBox_3.Name = "TextBox"
@@ -381,7 +394,7 @@ TextBox_3.Position = UDim2.new(0.345004708, 0, 0.202760756, 0)
 TextBox_3.Size = UDim2.new(0, 125, 0, 26)
 TextBox_3.Font = Enum.Font.Code
 TextBox_3.Text = "Dupe"
-TextBox_3.TextColor3 = Color3.fromRGB(39, 255, 127)
+TextBox_3.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextBox_3.TextSize = 14.000
 
 TextBox_4.Name = "TextBox"
@@ -392,7 +405,7 @@ TextBox_4.Position = UDim2.new(0.678338051, 0, 0.202760756, 0)
 TextBox_4.Size = UDim2.new(0, 119, 0, 26)
 TextBox_4.Font = Enum.Font.Code
 TextBox_4.Text = "Steal Tools"
-TextBox_4.TextColor3 = Color3.fromRGB(39, 255, 127)
+TextBox_4.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextBox_4.TextSize = 14.000
 
 TextBox_5.Name = "TextBox"
@@ -403,7 +416,7 @@ TextBox_5.Position = UDim2.new(0.347335726, 0, 0.475488037, 0)
 TextBox_5.Size = UDim2.new(0, 119, 0, 26)
 TextBox_5.Font = Enum.Font.Code
 TextBox_5.Text = "Sync"
-TextBox_5.TextColor3 = Color3.fromRGB(39, 255, 127)
+TextBox_5.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextBox_5.TextSize = 14.000
 
 -- Scripts:
@@ -587,17 +600,20 @@ local function DBGS_fake_script() -- TextBox.LocalScript
 					repeat
 						if CurrentSound then
 							local Volume = CurrentSound['PlaybackLoudness']
-							local Iterator=math.rad(Spin+(K*(760/#Visualizer)))
-							local Z = _G.Distance + Volume / (1 ~= 90 and (-200 - 1) or .01)
-							local G =  Volume / (5 ~= -42 and (10000 - -1) or .01)
+							local Iterator=math.rad(Spin+(K*(360/#Visualizer)))
+							local Z = _G.Distance + Volume / (1 ~= 90 and (90 - 1) or .01)
+							local G =  Volume / (5 ~= -42 and (20 - 01) or .01)
 							local P = CFrame.new(Root['Position']) * AngleFromSettings(Iterator,_G.VisAngle) * CFrame.new(1,0,Z)
 							local AddVector =Vector3.new(0,0,0)
 							if _G.WavesOn == "On" then
-								AddVector=VectorFromSettings(math.sin((((dt*_G.WaveInt)+(K/#Visualizer)*(math.pi*5000000000)))),_G.WavesAngle)
+								AddVector=VectorFromSettings(math.sin((((dt*_G.WaveInt)+(K/#Visualizer)*(math.pi*200000)))),_G.WavesAngle)
+								AddVector=VectorFromSettings(math.sin((((dt*_G.WaveInt)+(K/#Visualizer)*(math.pi*2327)))),_G.WavesAngle)
+								AddVector=VectorFromSettings(math.sin((((dt*_G.WaveInt)+(K/#Visualizer)*(math.pi*43853)))),_G.WavesAngle)
+								AddVector=VectorFromSettings(math.sin((((dt*_G.WaveInt)+(K/#Visualizer)*(math.pi*435)))),_G.WavesAngle)
 							end
 							
 							V['Position'] = P.p+AddVector
-							V['Rotation'] = CF2V(CFrame.new(V.Position, Root['Position'] + Vector3.new(-1, G, 4.6)))
+							V['Rotation'] = CF2V(CFrame.new(V.Position, Root['Position'] + Vector3.new(2.5, G, 0)))
 						end
 						Spin+=_G.Speed
 						game:service'RunService'.RenderStepped:Wait()
@@ -767,7 +783,7 @@ local function UMKP_fake_script() -- WavesOn.LocalScript
 	end)
 	while wait() do
 		if script.Parent.Name=="Waves"..tostring(_G.WavesOn) then
-			script.Parent.BackgroundColor3=Color3.fromRGB(255, 255, 127)
+			script.Parent.BackgroundColor3=Color3.fromRGB(255, 255, 255)
 		else
 			script.Parent.BackgroundColor3=Color3.fromRGB(31,31,31)
 		end
@@ -916,7 +932,7 @@ local function KOHXP_fake_script() -- TextBox_4.LocalScript
 		while wait() do
 			if _G.grabtools==true then
 				script.Parent.TextColor3=Color3.fromRGB(53, 53, 53)
-				script.Parent.BackgroundColor3=Color3.fromRGB(255, 255, 127)
+				script.Parent.BackgroundColor3=Color3.fromRGB(255, 255, 255)
 			else
 				script.Parent.TextColor3=Color3.fromRGB(255,255,255)
 				script.Parent.BackgroundColor3=Color3.fromRGB(20, 20, 20)
